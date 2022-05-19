@@ -1,0 +1,147 @@
+*, 
+*:after,
+*:before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;  
+    font-family: Arial, Helvetica, sans-serif;  
+}    
+
+.relogio {
+    display: flex; 
+    flex-direction: column;   
+    align-items: center;       
+    min-height: 100vh;    
+    color: #ffffff;
+    background-color: #8CC0DE;    
+}
+
+.relogio h1 {
+    font-size: 40px;
+    font-weight: bold;      
+    text-transform: uppercase;
+}
+
+.relogio .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.relogio .tempInfo {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #000000;
+    font-size: 20px;
+    border-radius: 10px;    
+    margin: 10px;    
+}
+
+.relogio .tempInfo .tempArea {
+    display: flex;
+}
+
+.relogio .temp,
+.relogio .vento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    margin: 10px;
+}
+
+.relogio .ventoArea {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    position: relative;
+    margin: 5px 0px;
+}
+
+.relogio .ventoPonto {
+    width: 20px;
+    height: 1px;
+    background-color: #ffffff; 
+    position: absolute;
+    top: 50%;
+    left: 50%;   
+    transform-origin: left;
+    transform: rotate(0deg);
+}
+
+.relogio .analogico {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 10px solid #000000;
+    margin: 10px 0px;  
+    overflow: hidden;
+    background: url('../images/2.png');           
+    background-position: center;
+    background-size: cover;       
+}
+
+.relogio .ponteiros {
+    width: 100%;
+    height: 100%;
+    padding-left: 50%;
+    padding-top: 50%;  
+    background: url('../images/hora.png');
+    background-position: center;
+    background-size: cover;         
+}
+
+.relogio .p {
+    transform-origin: left;
+    transform: rotate(0deg);
+    border-radius: 50%; 
+    position: absolute;          
+}
+
+.relogio .h {    
+    transform: rotate(0deg);
+    height: 4px;
+    width: 80px;
+    background-color: #000000;
+    border-radius: 50%;    
+}
+
+.relogio .m {    
+    transform: rotate(0deg);
+    height: 4px;
+    width: 100px;
+    background-color: #000000;
+    border-radius: 50%;    
+}
+
+.relogio .s {    
+    transform: rotate(0deg);
+    height: 3px;
+    width: 130px;
+    background-color: #ff0000;
+    border-radius: 50%;    
+}
+
+.relogio .centro {
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -5px;
+    margin-left: -5px;
+    z-index: 1;
+}
+
+.relogio .digital {
+    padding: 4px 13px;
+    font-size: 30px;    
+    color: #FAF0D7;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
